@@ -1,20 +1,22 @@
-Mounts Raw Fedora Asahi Build Images  
+# mount-asahi-image
+
+Mounts Raw Fedora Asahi Build Images which can be found here:  
 https://fedora-asahi-remix.org/builds.html
 
 
-**Fedora package install:**
+## Fedora Package Install
 ```dnf install arch-install-scripts zstd```
 
 **Usage:**
-
+```
 ./script-mount-asahi-img.sh {image name}
-./build.sh chroot
-./build.sh umount
+./script-mount-asahi-img.sh chroot
+./script-mount-asahi-img.sh umount
+```
 
 
 ### How-to
-Pull in a raw image from https://fedora-asahi-remix.org/builds.html
-ie
+Download a raw image from https://fedora-asahi-remix.org/builds.html  
 ```
 wget https://fedora-asahi-remix.org/os/fedora-39-minimal-202311241600.raw.zst
 ```
@@ -23,11 +25,11 @@ wget https://fedora-asahi-remix.org/os/fedora-39-minimal-202311241600.raw.zst
 ```
 ./script-mount-asahi-img.sh fedora-39-minimal-202311241600.raw.zst
 # or if already decompressed
-fedora-39-minimal-202311241600.raw
+./script-mount-asahi-img.sh fedora-39-minimal-202311241600.raw
 ```
 This will create a directory named `mnt_image` in the current directory -- and will mount the image to that directory
 
-**Chroot into the image:**
+**Chroot into the image:**  
 Once the image is mounted -- you can chroot into it with:  
 ```
 ./script-mount-asahi-img.sh chroot
