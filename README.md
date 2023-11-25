@@ -9,9 +9,9 @@ https://fedora-asahi-remix.org/builds.html
 
 **Usage:**
 ```
-./script-mount-asahi-img.sh {image name}
-./script-mount-asahi-img.sh chroot
-./script-mount-asahi-img.sh umount
+./script-asahi-img.sh {image name}
+./script-asahi-img.sh chroot
+./script-asahi-img.sh umount
 ```
 
 
@@ -23,21 +23,21 @@ wget https://fedora-asahi-remix.org/os/fedora-39-minimal-202311241600.raw.zst
 
 **Mount the image:**
 ```
-./script-mount-asahi-img.sh fedora-39-minimal-202311241600.raw.zst
+./script-asahi-img.sh fedora-39-minimal-202311241600.raw.zst
 # or if already decompressed
-./script-mount-asahi-img.sh fedora-39-minimal-202311241600.raw
+./script-asahi-img.sh fedora-39-minimal-202311241600.raw
 ```
 This will create a directory named `mnt_image` in the current directory -- and will mount the image to that directory
 
 **Chroot into the image:**  
 Once the image is mounted -- you can chroot into it with:  
 ```
-./script-mount-asahi-img.sh chroot
+./script-asahi-img.sh chroot
 ```
 To exit from the `chroot` environment, simply type `ctrl+d` or `exit`  
 
 **Umounting the image:**
 ```
-./script-mount-asahi-img.sh umount
+./script-asahi-img.sh umount
 ```
 This will unmount the image from `mnt_image`  
