@@ -27,7 +27,7 @@ wget https://fedora-asahi-remix.org/os/fedora-39-minimal-202311241600.raw.zst
 # or if already decompressed
 ./script-asahi-img.sh fedora-39-minimal-202311241600.raw
 ```
-This will create a directory named `mnt_image` in the current directory -- and will mount the image to that directory
+This will create a directory named `mnt_image` within the current directory -- and will mount the image to that directory
 
 **Chroot into the image:**  
 Once the image is mounted -- you can chroot into it with:  
