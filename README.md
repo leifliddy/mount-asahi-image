@@ -1,6 +1,6 @@
 # mount-asahi-image
 
-Mounts Raw Fedora Asahi Build Images which can be found here:  
+Mounts Raw Fedora Asahi Images which can be found here:  
 https://fedora-asahi-remix.org/builds.html
 
 
