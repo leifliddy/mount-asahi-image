@@ -64,7 +64,6 @@ umount_image() {
     boot_loopback=$(findmnt -n $mnt_image/boot | awk '{print $2}')
     root_loopback=$(findmnt -n $mnt_image/ | awk '{print $2}' | sed 's/\[\/root\]$//')
 
-
     [[ -n $efi_loopback ]] && umount $mnt_image/boot/efi
     [[ -n $boot_loopback ]] && umount $mnt_image/boot
     [[ -n $root_loopback ]] && umount $mnt_image
