@@ -9,7 +9,7 @@ https://fedora-asahi-remix.org/builds.html
 
 **Usage:**
 ```
-./script-asahi-img.sh {image name}
+./script-asahi-img.sh [image name]
 ./script-asahi-img.sh chroot
 ./script-asahi-img.sh umount
 ```
